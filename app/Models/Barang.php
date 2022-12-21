@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Barang extends Model
 {
-
+    public $table = "barang";
      protected $fillable = [
-        "nama_barang", "jumlah_barang","harga_barang","image_barang",
+        'nama_barang', 'jumlah_barang','harga_barang','image_barang',
     ];
 }

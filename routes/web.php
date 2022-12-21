@@ -27,5 +27,5 @@ $router->get('/key',function(){
 $router->post('/barang','BarangController@store');
 $router->get('/barang','BarangController@index');
 $router->get('/barang/{id}','BarangController@show');
-$router->delete('/barang','BarangController@delete');
-$router->put('/barang','BarangController@update');
+$router->delete('/barang/{id}','BarangController@destroy');
+$router->put('/barang/{id}','BarangController@update');
